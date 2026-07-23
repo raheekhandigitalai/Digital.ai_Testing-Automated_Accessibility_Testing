@@ -1,1 +1,0 @@
-For more infromation about this command, see [SetLocation](https://docs.digital.ai/bundle/TE/page/setlocation.html).

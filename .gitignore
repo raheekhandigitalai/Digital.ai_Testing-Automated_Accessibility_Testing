@@ -1,0 +1,13 @@
+# Build output
+build/
+.gradle/
+
+# IntelliJ
+.idea/
+*.iml
+
+# macOS
+.DS_Store
+
+# Axe scan output
+results/

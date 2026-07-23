@@ -1,1 +1,0 @@
-For more information about this command, see [setAuthenticationReply](https://docs.digital.ai/bundle/TE/page/setauthenticationreply.html).

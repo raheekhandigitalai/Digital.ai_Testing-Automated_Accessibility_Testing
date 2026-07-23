@@ -1,1 +1,0 @@
-For more information about this capability, see [Automated Test Reports](https://docs.digital.ai/bundle/TE/page/automated_test_reports.html).

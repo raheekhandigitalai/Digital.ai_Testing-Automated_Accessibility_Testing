@@ -1,1 +1,0 @@
-For more information about these commands, see [Using The File Repository](https://docs.digital.ai/bundle/TE/page/using_the_file_repository.html).
