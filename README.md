@@ -14,10 +14,11 @@ Run automated accessibility scans on mobile devices using **Appium**,
 
 ## Prerequisites
 
-| Requirement | Notes                                                                                              |
-|---|----------------------------------------------------------------------------------------------------|
-| **Digital.ai Testing account** | You need an **Access Key** and your cloud **URL** (e.g. `https://uscloud.experitest.com/wd/hub`).  |
-| **Axe API key** | Provided by Deque / Digital.ai for accessibility scanning.                                         |
+| Requirement | Notes                                                                                             |
+|---|---------------------------------------------------------------------------------------------------|
+| **Java (JDK) 11 or newer** | JDK 17 (LTS) recommended. Required as the project is leveraging Appium `java-client` 9.         |
+| **Digital.ai Testing account** | You need an **Access Key** and your cloud **URL** (e.g. `https://uscloud.experitest.com/wd/hub`). |
+| **Axe API key** | Provided by Deque / Digital.ai for accessibility scanning.                                        |
 
 ---
 
@@ -39,6 +40,20 @@ Run automated accessibility scans on mobile devices using **Appium**,
    | `dai.environment` | Your Digital.ai cloud URL. |
    | `deviceQuery` | Which device to run on (see [Choosing the device](#choosing-the-device)). |
    | `failTests` | `true` to fail tests on critical/serious issues, `false` to log only. |
+
+---
+
+## Dependencies & build
+
+- The **Gradle wrapper** (`gradlew` / `gradlew.bat`) is included, so the first
+  `./gradlew` run downloads the right Gradle version automatically. No manual
+  Gradle install needed.
+- **Dependency versions lives in `build.gradle`** (the `dependencies { }` block):
+  TestNG, Appium `java-client`, gson, and so on. `./gradlew test` downloads and
+  caches them on the first run.
+- To change a version, edit `build.gradle` and re-run `./gradlew test`.
+
+> The first run needs internet access to download Gradle and the dependencies.
 
 ---
 
